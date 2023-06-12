@@ -131,7 +131,7 @@ ALTER SEQUENCE public.moon_moon_id_seq OWNED BY public.moon.moon_id;
 
 CREATE TABLE public.more_info (
     more_info_id integer NOT NULL,
-    object_id integer NOT NULL,
+    object_id integer,
     name character varying(20) NOT NULL,
     description text
 );
@@ -296,26 +296,26 @@ INSERT INTO public.galaxy VALUES (6, 6, 'galaxy6', 500, 750, 1500.75, 'solid', t
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.moon VALUES (1, 1, 'moon1', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (2, 2, 'moon2', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (3, 3, 'moon3', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (4, 4, 'moon4', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (5, 5, 'moon5', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (6, 6, 'moon6', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (7, 7, 'moon7', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (8, 8, 'moon8', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (9, 9, 'moon9', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (10, 10, 'moon10', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (11, 11, 'moon11', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (12, 12, 'moon12', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (13, 11, 'moon13', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (14, 11, 'moon14', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (15, 11, 'moon15', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (16, 11, 'moon16', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (17, 11, 'moon17', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (18, 11, 'moon18', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (19, 11, 'moon19', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.moon VALUES (20, 11, 'moon20', 500, 750, 1500.75, 'true', true, NULL);
+INSERT INTO public.moon VALUES (1, 1, 'moon1', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (2, 2, 'moon2', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (3, 3, 'moon3', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (4, 4, 'moon4', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (5, 5, 'moon5', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (6, 6, 'moon6', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (7, 7, 'moon7', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (8, 8, 'moon8', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (9, 9, 'moon9', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (10, 10, 'moon10', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (11, 11, 'moon11', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (12, 11, 'moon12', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (13, 11, 'moon13', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (14, 11, 'moon14', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (15, 11, 'moon15', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (16, 11, 'moon16', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (17, 11, 'moon17', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (18, 11, 'moon18', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (19, 11, 'moon19', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.moon VALUES (20, 11, 'moon20', 500, 750, 1500.75, 'solid', true, true);
 
 
 --
@@ -333,30 +333,30 @@ INSERT INTO public.more_info VALUES (5, 5, 'info5', 'lorem impsum');
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES (1, 1, 1, 'planet1', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (2, 2, 2, 'planet2', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (3, 3, 3, 'planet3', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (4, 4, 4, 'planet4', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (5, 5, 5, 'planet5', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (6, 6, 6, 'planet6', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (7, 6, 7, 'planet7', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (8, 6, 8, 'planet8', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (9, 6, 9, 'planet9', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (10, 6, 10, 'planet10', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (11, 6, 11, 'planet11', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.planet VALUES (12, 6, 12, 'planet12', 500, 750, 1500.75, 'true', true, NULL);
+INSERT INTO public.planet VALUES (1, 1, 1, 'planet1', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (2, 2, 2, 'planet2', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (3, 3, 3, 'planet3', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (4, 4, 4, 'planet4', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (5, 5, 5, 'planet5', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (6, 6, 6, 'planet6', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (7, 6, 7, 'planet7', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (8, 6, 8, 'planet8', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (9, 6, 9, 'planet9', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (10, 6, 10, 'planet10', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (11, 6, 11, 'planet11', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.planet VALUES (12, 6, 12, 'planet12', 500, 750, 1500.75, 'solid', true, true);
 
 
 --
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.star VALUES (1, 1, 1, 'star1', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.star VALUES (2, 2, 2, 'star2', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.star VALUES (3, 3, 3, 'star3', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.star VALUES (4, 4, 4, 'star4', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.star VALUES (5, 5, 5, 'star5', 500, 750, 1500.75, 'true', true, NULL);
-INSERT INTO public.star VALUES (6, 6, 6, 'star6', 500, 750, 1500.75, 'true', true, NULL);
+INSERT INTO public.star VALUES (1, 1, 1, 'star1', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (2, 2, 2, 'star2', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (3, 3, 3, 'star3', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (4, 4, 4, 'star4', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (5, 5, 5, 'star5', 500, 750, 1500.75, 'solid', true, true);
+INSERT INTO public.star VALUES (6, 6, 6, 'star6', 500, 750, 1500.75, 'solid', true, true);
 
 
 --
@@ -525,3 +525,4 @@ ALTER TABLE ONLY public.star
 --
 -- PostgreSQL database dump complete
 --
+
